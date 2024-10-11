@@ -209,7 +209,7 @@ And public attribution of xiaomi platforms(like venus and so and)
 		vib_r_spare = < 0x68 >;
 		vib_bstdbg = < 0x30 0xeb 0xd4 0 0 0 >;
 		vib_effect_id_boundary = < 10 >;
-		vib_effect_max = < 170 >;
+		vib_effect_max = < 193 >;   /*vib_effect_max must bigger than vib_effect_id*/
 		vib_trig_config = < 0 1 0 1 2
 						0 1 0 1 2
 						0 1 0 1 2 >;
@@ -703,7 +703,7 @@ And public attribution of xiaomi platforms(like venus and so and)
 &qupv3_se1_spi {
         status = "ok";
         ir-spi@0 {
-                compatible = "ir-spi";
+                compatible = "ir-spi-led";
                 reg = <0>;
                 spi-max-frequency = <19200000>;
                 status = "ok";
